@@ -18,8 +18,6 @@ class _TwoWayCounterState extends State<TwoWayCounter> {
 
     await Future.delayed(const Duration(seconds: 2));
 
-    if (!mounted) return;
-
     setState(() {
       _saving = false;
     });
@@ -45,7 +43,6 @@ class _TwoWayCounterState extends State<TwoWayCounter> {
                           _count--;
                         });
                       },
-                child: const Text('−'),
                 style: OutlinedButton.styleFrom(
                   backgroundColor: Colors.amber,
                   foregroundColor: Colors.black,
@@ -53,6 +50,7 @@ class _TwoWayCounterState extends State<TwoWayCounter> {
                   disabledForegroundColor: Colors.black54,
                   side: const BorderSide(color: Colors.amber),
                 ),
+                child: const Text('−'),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),

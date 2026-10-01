@@ -19,8 +19,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
     backgroundColor: const Color.fromARGB(255, 239, 152, 39),
-    appBar: AppBar(title: const Text('A screen that reacts'),
-    backgroundColor: const Color.fromARGB(255, 255, 194, 12),
+    appBar: AppBar(
+      title: const Text('A screen that reacts'),
+      backgroundColor: const Color.fromARGB(255, 255, 194, 12),
     ),
     body: const Padding(
       padding: EdgeInsets.all(16),
